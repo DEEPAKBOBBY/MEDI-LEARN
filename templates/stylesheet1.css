@@ -1,0 +1,105 @@
+.div1
+    {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-left: 4%;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .div2
+    {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-left: 63%;
+        position:absolute;
+        top: 34%;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .div3
+    {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-left:15%;
+        position:absolute;
+        top: 100%;
+        align-items: center;
+        width: 1000px;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .p0
+    {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color:rgb(12, 151, 151);
+    }
+    .p1{
+
+        justify-content: center;
+        font-size: large;
+        color:rgb(12, 151, 151);
+    }
+    .aip0
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color:rgb(12, 151, 151);
+    }
+    .aip1
+    {
+        display: flex;
+        justify-content: center;
+        font-size: large;
+        color:rgb(12, 151, 151);
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: black;
+    }
+
+    h1 {
+        white-space: nowrap; /* Prevents text from wrapping */
+        position: absolute;
+        animation: moveAcrossScreen 5s linear infinite; /* Animation to move text */
+    }
+
+    @keyframes moveAcrossScreen {
+        0% {
+            transform: translateX(0); /* Start position */
+        }
+        100% {
+            transform: translateX(calc(100vw - 100%)); /* Moves text exactly device width */
+        }
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(100vw);
+        }
+    }
+    h1{
+        width: 100vw;
+        overflow: hidden; /* Hide any overflow to prevent horizontal scrolling */
+    }
+    h1 {
+        background-image: url("C:\\Users\\kalyan king\\Pictures\\bob.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        color: whitesmoke;
+        position: relative;
+        font-style: italic;
+        font-size: 100px;
+        white-space: nowrap;
+        animation: moveText 5s linear infinite;
+    }
